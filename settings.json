@@ -1,5 +1,5 @@
-{   /* ############## Hi, AR Rahman here ################# */
-  /* ########## This is my personal custom config  ############# */
+{ 	/* ############## Hi, AR Rahman here ################# */
+	/* ########## This is my personal custom config  ############# */
 	/* ===== basic-setting ===== */
 	"editor.minimap.enabled": false,
 	"security.workspace.trust.untrustedFiles": "open",
@@ -63,7 +63,7 @@
 	/*===  PHP formater ===*/
 	"[php]": {
 		//"editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
-		"editor.formatOnSave": true
+		"editor.formatOnSave": true,
 		//"editor.defaultFormatter": "animus-coop.vscode-phpstorm-formatter",
 	},
 	/*=====  Cursor settings ======*/
@@ -94,7 +94,7 @@
 	"editor.lineHeight": 0,
 	"synthwave84.brightness": 0.45,
 	"synthwave84.disableGlow": true,
-
+	"breadcrumbs.enabled": false,
 	/* ===== Theme customize =====*/
 	"workbench.colorCustomizations": {
 		//"[SynthWave '84]": {
@@ -169,7 +169,7 @@
 			"editorBracketHighlight.foreground3": "#f821ea",
 			"editorBracketHighlight.foreground4": "#ff753a",
 			"editorBracketHighlight.foreground5": "#faec26",
-			"editorBracketHighlight.foreground2": "#16f821"
+			"editorBracketHighlight.foreground2": "#16f821",
 		//}
 	},
 	"window.titleBarStyle": "custom",
@@ -203,7 +203,8 @@
 	"editor.guides.bracketPairs": "active",
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.productIconTheme": "fluent-icons",
-	"workbench.colorTheme": "SynthWave '84"
+	"workbench.colorTheme": "SynthWave '84",
+	"workbench.editor.enablePreview": false,
 	//"editor.insertSpaces": true
 
 	/* ===== php-setting =====*/
