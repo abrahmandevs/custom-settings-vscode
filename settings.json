@@ -1,5 +1,11 @@
 { 	/* ############## Hi, AR Rahman here ################# */
 	/* ########## This is my personal custom config  ############# */
+	
+	/* ===== Updates-setting =====*/
+	"update.mode": "none",
+	"extensions.autoCheckUpdates": true,
+	"extensions.autoUpdate": true,
+
 	/* ===== basic-setting ===== */
 	"editor.minimap.enabled": false,
 	"security.workspace.trust.untrustedFiles": "open",
@@ -8,9 +14,9 @@
 
 	/* ===== font ===== */
 	"editor.fontLigatures": true,
-	"editor.fontFamily": "Source code pro, Fire code, 'Courier New', monospace",
-	"editor.fontSize": 16,
-	"editor.fontWeight": 500,
+	"editor.fontFamily": "JetBrains Mono",
+	"editor.fontSize": 13,
+	"editor.fontWeight": 400,
 
 	/* ==== wrap-settings ====*/
 	"editor.wordWrap": "on",
@@ -26,14 +32,22 @@
 	"prettier.vueIndentScriptAndStyle": true,
 	"prettier.requireConfig": false,
 
-	/* ==== formation-settings ====*/
-	"editor.stickyTabStops": false,
-	"editor.tabSize": 4,
+	/* ==== Indentation-formation-settings ====*/
+	"workbench.editor.highlightModifiedTabs": true,
+	"workbench.editor.showTabs": true,//
+	"workbench.tree.indent": 10,
+	"editor.tabCompletion": "on",
+    "editor.tabSize": 4,
+	"editor.stickyTabStops": true,
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": true,
 	"html.format.indentHandlebars": true,
 	"html.format.indentInnerHtml": true,
 	"vetur.format.styleInitialIndent": true,
 	"vetur.format.scriptInitialIndent": true,
 	"vetur.format.options.useTabs": true,
+
+	/* ==== formation-settings ====*/
 	"editor.codeActionsOnSave": {
 		"source.fixAll": true
 	},
@@ -45,7 +59,8 @@
 	"htmlhint.enable": true,
 	/*=== formatting by ===*/
 	"[html]": {
-		"editor.suggest.insertMode": "replace"
+		"editor.suggest.insertMode": "replace",
+		"editor.defaultFormatter": "HookyQR.beautify"
 	},
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"[css]": {
@@ -61,21 +76,26 @@
 		"editor.formatOnSave": true
 	},
 	/*===  PHP formater ===*/
+	//"phpstormFormatter.ideBinPath": 'null',
+	//"phpstormFormatter.styleGuidePath": 'null',
+	/*===  PHP formater ===*/
 	"[php]": {
-		//"editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
-		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+		//"editor.formatOnSave": true,
+		//"editor.defaultFormatter": "animus-coop.vscode-phpstorm-formatter",
 		//"editor.defaultFormatter": "animus-coop.vscode-phpstorm-formatter",
 	},
+
 	/*=====  Cursor settings ======*/
 	"editor.mouseWheelZoom": true,
 	"editor.cursorBlinking": "expand",
-	"editor.cursorSmoothCaretAnimation": true,
-	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.cursorSmoothCaretAnimation": "on",
 	"editor.cursorWidth": 3,
 	"workbench.list.smoothScrolling": true,
 	"editor.smoothScrolling": true,
 	"terminal.integrated.cursorBlinking": true,
 	"workbench.list.horizontalScrolling": true,
+	"editor.multiCursorModifier": "ctrlCmd",
 
 	/* ===== live-server setting =====*/
 	"liveServer.settings.donotShowInfoMsg": true,
@@ -85,8 +105,7 @@
 	///  /* workbench.colorCustomizations */ ///
 	/* theme: Cobalt2, Night Rainbow, One Dark Pro, { bg-color:#1a1f20, gray-bg:#f0eeee, white-bg:#f8f6f6 } */
 
-	/* ===== Theme settings =====*/
-	//"rainbowTags.allowEverywhere": false,
+	/* ==== Theme settings=====*/
 	"emmet.triggerExpansionOnTab": false,
 	"editor.occurrencesHighlight": false,
 	"editor.selectionHighlight": false,
@@ -94,13 +113,12 @@
 	"editor.lineHeight": 0,
 	"synthwave84.brightness": 0.45,
 	"synthwave84.disableGlow": true,
-	"breadcrumbs.enabled": false,
 	/* ===== Theme customize =====*/
 	"workbench.colorCustomizations": {
-		//"[SynthWave '84]": {
+		"[JetBrains Darcula Theme]": {
 
 			/* === titleBar === */
-			"titleBar.activeBackground": "#0f1414",
+			"titleBar.activeBackground": "#090e0e",
 			"titleBar.activeForeground": "#3fd4d4",
 
 			/* === tab bar === */
@@ -170,19 +188,13 @@
 			"editorBracketHighlight.foreground4": "#ff753a",
 			"editorBracketHighlight.foreground5": "#faec26",
 			"editorBracketHighlight.foreground2": "#16f821",
-		//}
+		}
 	},
 	"window.titleBarStyle": "custom",
 	"editor.accessibilitySupport": "off",
 	"editor.renderWhitespace": "all",
-	"update.mode": "none",
-	"extensions.autoCheckUpdates": false,
-  	"extensions.autoUpdate": false,
 	
 	/* ===== modifi-setting =====*/
-	"editor.tabCompletion": "on",
-	"workbench.editor.highlightModifiedTabs": true,
-	"workbench.tree.indent": 10,
 	// new edits
 	"settingsSync.ignoredExtensions": [
 		"aaron-bond.better-comments"
@@ -203,10 +215,16 @@
 	"editor.guides.bracketPairs": "active",
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.productIconTheme": "fluent-icons",
-	"workbench.colorTheme": "SynthWave '84",
 	"workbench.editor.enablePreview": false,
-	//"editor.insertSpaces": true
-
+	"editor.linkedEditing": true,
+	"workbench.colorTheme": "JetBrains Darcula Theme",
+	"editor.find.autoFindInSelection": "multiline",
+	"highlightSelections.borderColor": "#3BFFFFFF",
+	"editor.unicodeHighlight.ambiguousCharacters": false,
+	"window.menuBarVisibility": "compact",
+	"workbench.statusBar.visible": true,
+	"breadcrumbs.enabled": false,
+	"diffEditor.renderSideBySide": false
 	/* ===== php-setting =====*/
 	//"php.validate.executablePath": "C:/xampp/htdocs/study-files/PHP/class22/index.php",
 	//"intelephense.environment.documentRoot": "C:/xampp/htdocs/study-files/PHP/class22/index.php",
